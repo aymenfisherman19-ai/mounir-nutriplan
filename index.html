@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Mounir — Nutrition Plan</title>
+<title>Mounir — Plan Nutritionnel</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -265,13 +265,13 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 
 <!-- HERO -->
 <div class="hero">
-  <p class="hero-eyebrow">🏋️ Summer Cut Program — Nutritional Blueprint</p>
-  <h1>Mounir <em>/ Fat Loss Plan</em></h1>
-  <p class="hero-sub">96 kg · 179 cm · 25 y/o · Mechanic (Moderate Activity)</p>
+  <p class="hero-eyebrow">🏋️ Programme Sèche Estivale — Blueprint Nutritionnel</p>
+  <h1>Mounir <em>/ Plan Perte de Graisse</em></h1>
+  <p class="hero-sub">96 kg · 179 cm · 25 ans · Mécanicien (Activité Modérée)</p>
 
   <div class="stats-row">
     <div class="stat-box">
-      <div class="stat-label">BMR</div>
+      <div class="stat-label">MB</div>
       <div class="stat-val">1959<small>kcal</small></div>
     </div>
     <div class="stat-box">
@@ -279,12 +279,12 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
       <div class="stat-val">3036<small>kcal</small></div>
     </div>
     <div class="stat-box">
-      <div class="stat-label">Deficit</div>
+      <div class="stat-label">Déficit</div>
       <div class="stat-val">−550<small>kcal</small></div>
     </div>
     <div class="stat-box">
-      <div class="stat-label">Target</div>
-      <div class="stat-val" style="color:var(--orange)">2450<small>kcal</small></div>
+      <div class="stat-label">Objectif</div>
+      <div class="stat-val" style="color:var(--orange)">2080<small>kcal</small></div>
     </div>
   </div>
 </div>
@@ -292,8 +292,8 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <!-- TABS -->
 <div class="tabs-row">
   <button class="tab active" onclick="switchTab('macros')">📊 Macros</button>
-  <button class="tab" onclick="switchTab('meals')">🍽️ Daily Plan</button>
-  <button class="tab" onclick="switchTab('tips')">💡 Tips</button>
+  <button class="tab" onclick="switchTab('meals')">🍽️ Plan Journalier</button>
+  <button class="tab" onclick="switchTab('tips')">💡 Conseils</button>
 </div>
 
 <main>
@@ -302,72 +302,72 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <div class="section active" id="sec-macros">
 
   <div class="calories-hero">
-    <div class="cal-number">2450</div>
+    <div class="cal-number">2080</div>
     <div class="cal-detail">
-      <h3>Daily Calorie Target</h3>
-      <div class="cal-row">BMR (Mifflin-St Jeor) <span>1 959 kcal</span></div>
-      <div class="cal-row">× Activity (Mechanic 1.55) <span>3 036 kcal</span></div>
-      <div class="cal-row">Fat Loss Deficit <span>− 550 kcal</span></div>
-      <div class="cal-row" style="color:var(--orange)">🎯 Daily Target <span style="color:var(--orange)">2 450 kcal</span></div>
+      <h3>Objectif Calorique Journalier</h3>
+      <div class="cal-row">MB (Mifflin-St Jeor) <span>1 959 kcal</span></div>
+      <div class="cal-row">× Activité (Mécanicien 1.55) <span>3 036 kcal</span></div>
+      <div class="cal-row">Déficit Perte de Graisse <span>− 550 kcal</span></div>
+      <div class="cal-row" style="color:var(--orange)">🎯 Objectif Journalier <span style="color:var(--orange)">2 080 kcal</span></div>
     </div>
   </div>
 
   <div class="macro-pills">
     <div class="macro-pill prot">
-      <div class="pill-g">207<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Protein</div>
-      <div class="pill-kcal">828 kcal · 34%</div>
+      <div class="pill-g">230<span style="font-size:16px">g</span></div>
+      <div class="pill-label">Protéines</div>
+      <div class="pill-kcal">920 kcal · 44%</div>
     </div>
     <div class="macro-pill carb">
-      <div class="pill-g">258<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Carbs</div>
-      <div class="pill-kcal">1 030 kcal · 42%</div>
+      <div class="pill-g">140<span style="font-size:16px">g</span></div>
+      <div class="pill-label">Glucides</div>
+      <div class="pill-kcal">560 kcal · 27%</div>
     </div>
     <div class="macro-pill fat">
       <div class="pill-g">66<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Fat</div>
-      <div class="pill-kcal">594 kcal · 24%</div>
+      <div class="pill-label">Lipides</div>
+      <div class="pill-kcal">594 kcal · 29%</div>
     </div>
   </div>
 
   <div class="calc-card">
-    <div class="calc-title">📐 Protein Calculation</div>
+    <div class="calc-title">📐 Calcul des Protéines</div>
     <div class="calc-line row1">
       <div>
         <div style="font-weight:600;font-size:13px">Minimum (×2.1)</div>
-        <div class="lbl">Lower bound for muscle preservation</div>
+        <div class="lbl">Seuil bas pour préserver la masse musculaire</div>
       </div>
       <div class="val" style="color:var(--lime)">202g</div>
     </div>
     <div class="calc-line row4">
       <div>
-        <div style="font-weight:600;font-size:13px">✓ Used (×2.15)</div>
-        <div class="lbl">96 kg × 2.15 — optimal for cut</div>
+        <div style="font-weight:600;font-size:13px">✓ Utilisé (×2.15)</div>
+        <div class="lbl">96 kg × 2.15 — optimal pour la sèche</div>
       </div>
       <div class="val" style="color:var(--lime)">207g</div>
     </div>
     <div class="calc-line row2">
       <div>
         <div style="font-weight:600;font-size:13px">Maximum (×2.2)</div>
-        <div class="lbl">Upper bound</div>
+        <div class="lbl">Seuil haut</div>
       </div>
       <div class="val" style="color:var(--lime)">211g</div>
     </div>
   </div>
 
   <div class="calc-card">
-    <div class="calc-title">⚡ Expected Fat Loss Rate</div>
+    <div class="calc-title">⚡ Rythme de Perte de Graisse Estimé</div>
     <div class="calc-line row1">
-      <div><div style="font-weight:600;font-size:13px">Weekly deficit</div><div class="lbl">550 kcal/day × 7</div></div>
+      <div><div style="font-weight:600;font-size:13px">Déficit hebdomadaire</div><div class="lbl">550 kcal/jour × 7</div></div>
       <div class="val" style="color:var(--orange)">3 850 kcal</div>
     </div>
     <div class="calc-line row3">
-      <div><div style="font-weight:600;font-size:13px">Fat loss / week</div><div class="lbl">~0.5 kg pure fat (healthy pace)</div></div>
+      <div><div style="font-weight:600;font-size:13px">Perte de graisse / semaine</div><div class="lbl">~0.5 kg de graisse pure (rythme sain)</div></div>
       <div class="val" style="color:var(--yellow)">~0.5 kg</div>
     </div>
     <div class="calc-line row4">
-      <div><div style="font-weight:600;font-size:13px">12-week projection</div><div class="lbl">Summer ready timeline</div></div>
-      <div class="val" style="color:var(--lime)">~6 kg fat</div>
+      <div><div style="font-weight:600;font-size:13px">Projection sur 12 semaines</div><div class="lbl">Objectif prêt pour l'été</div></div>
+      <div class="val" style="color:var(--lime)">~6 kg de graisse</div>
     </div>
   </div>
 
@@ -376,267 +376,254 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <!-- ══════════ MEALS TAB ══════════ -->
 <div class="section" id="sec-meals">
 
-  <p class="meals-header">6-Meal <em>Daily Blueprint</em></p>
+  <p class="meals-header">Blueprint <em>Journalier — 5 Repas</em></p>
 
-  <!-- MEAL 1 -->
+  <!-- REPAS 1 -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 1</div>
+      <div class="meal-num">REPAS 1</div>
       <div class="meal-info">
-        <div class="meal-time">🕖 7:00 — Breakfast</div>
-        <div class="meal-name">Oats + Eggs</div>
+        <div class="meal-time">🌅 Matin — Protéines + Lipides</div>
+        <div class="meal-name">Omelette Œufs + Skyr + Amandes</div>
       </div>
-      <div class="meal-kcal">447<small>kcal</small></div>
+      <div class="meal-kcal">410<small>kcal</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🌾</span>
-          <div><div class="food-name">Rolled Oats</div><div class="food-qty">70g dry — cook with water</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 10g</span><span class="tag c">C 47g</span><span class="tag f">F 4.5g</span></div>
-      </div>
       <div class="food-row">
         <div class="food-left">
           <span class="food-icon">🥚</span>
-          <div><div class="food-name">2 Whole Eggs + 2 Egg Whites</div><div class="food-qty">boiled or scrambled (no oil)</div></div>
+          <div><div class="food-name">4 Blancs d'œufs + 2 Œufs entiers</div><div class="food-qty">omelette ou brouillés — sans matière grasse</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 20g</span><span class="tag c">C 1g</span><span class="tag f">F 10g</span></div>
+        <div class="food-macros"><span class="tag p">P 24g</span><span class="tag c">C 1g</span><span class="tag f">F 10g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🥛</span>
+          <div><div class="food-name">Skyr Nature</div><div class="food-qty">100g — riche en protéines, faible en graisses</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 4g</span><span class="tag f">F 0g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🌰</span>
+          <div><div class="food-name">Amandes</div><div class="food-qty">30g — ou 10g d'huile d'olive (au choix)</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 6g</span><span class="tag c">C 3g</span><span class="tag f">F 13g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">☕</span>
+          <div><div class="food-name">Café ou Thé</div><div class="food-qty">sans sucre — quantité libre</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">30g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">48g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">14.5g</div><div class="mmb-lbl">Fat</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">43g</div><div class="mmb-lbl">Protéines</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">9g</div><div class="mmb-lbl">Glucides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23g</div><div class="mmb-lbl">Lipides</div></div>
       </div>
     </div>
   </div>
 
-  <!-- MEAL 2 -->
+  <!-- REPAS 2 -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 2</div>
+      <div class="meal-num">REPAS 2</div>
       <div class="meal-info">
-        <div class="meal-time">🕙 10:30 — Mid-Morning Snack</div>
-        <div class="meal-name">Tuna + Bread + Fruit</div>
+        <div class="meal-time">🕑 Midi — Repas Principal</div>
+        <div class="meal-name">Bœuf / Poulet + Riz + Légumes</div>
       </div>
-      <div class="meal-kcal">358<small>kcal</small></div>
-    </div>
-    <div class="meal-body">
-      <div class="divider"></div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🐟</span>
-          <div><div class="food-name">Canned Tuna</div><div class="food-qty">130g drained — in water or brine</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 30g</span><span class="tag c">C 0g</span><span class="tag f">F 1.5g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🍞</span>
-          <div><div class="food-name">Bread (2 slices)</div><div class="food-qty">60g — khobz el dar or baguette</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 5g</span><span class="tag c">C 28g</span><span class="tag f">F 1.5g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🍎</span>
-          <div><div class="food-name">1 Apple or Orange</div><div class="food-qty">~150g — any seasonal fruit</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 20g</span><span class="tag f">F 0g</span></div>
-      </div>
-      <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">35g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">48g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">3g</div><div class="mmb-lbl">Fat</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MEAL 3 -->
-  <div class="meal-card">
-    <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 3</div>
-      <div class="meal-info">
-        <div class="meal-time">🕑 13:30 — Lunch (Biggest Meal)</div>
-        <div class="meal-name">Chicken + Rice + Veggies</div>
-      </div>
-      <div class="meal-kcal">649<small>kcal</small></div>
-    </div>
-    <div class="meal-body">
-      <div class="divider"></div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🍗</span>
-          <div><div class="food-name">Chicken Breast</div><div class="food-qty">200g — grilled, baked or steamed</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 46g</span><span class="tag c">C 0g</span><span class="tag f">F 4g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🍚</span>
-          <div><div class="food-name">White Rice</div><div class="food-qty">80g dry weight (~220g cooked)</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 6g</span><span class="tag c">C 62g</span><span class="tag f">F 0.5g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🥦</span>
-          <div><div class="food-name">Broccoli + Mixed Veggies</div><div class="food-qty">200g — steamed or raw (courgette, carrots, pepper)</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 4g</span><span class="tag c">C 12g</span><span class="tag f">F 0g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🫒</span>
-          <div><div class="food-name">Olive Oil</div><div class="food-qty">1 tablespoon (10ml) to dress veggies</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 10g</span></div>
-      </div>
-      <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">56g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">74g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">14.5g</div><div class="mmb-lbl">Fat</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MEAL 4 -->
-  <div class="meal-card">
-    <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 4</div>
-      <div class="meal-info">
-        <div class="meal-time">🕓 16:30 — Pre-Workout</div>
-        <div class="meal-name">Sweet Potato + Egg Whites</div>
-      </div>
-      <div class="meal-kcal">224<small>kcal</small></div>
-    </div>
-    <div class="meal-body">
-      <div class="divider"></div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🍠</span>
-          <div><div class="food-name">Sweet Potato</div><div class="food-qty">200g — baked or boiled</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 3.6g</span><span class="tag c">C 41g</span><span class="tag f">F 0.2g</span></div>
-      </div>
-      <div class="food-row">
-        <div class="food-left">
-          <span class="food-icon">🥚</span>
-          <div><div class="food-name">3 Egg Whites</div><div class="food-qty">~100ml — boiled or omelette (no oil)</div></div>
-        </div>
-        <div class="food-macros"><span class="tag p">P 10.5g</span><span class="tag c">C 0.7g</span><span class="tag f">F 0.2g</span></div>
-      </div>
-      <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">14g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">42g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">0.4g</div><div class="mmb-lbl">Fat</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MEAL 5 -->
-  <div class="meal-card">
-    <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 5</div>
-      <div class="meal-info">
-        <div class="meal-time">🕖 19:30 — Post-Workout Dinner</div>
-        <div class="meal-name">Beef + Potato + Salad</div>
-      </div>
-      <div class="meal-kcal">504<small>kcal</small></div>
+      <div class="meal-kcal">560<small>kcal</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
         <div class="food-left">
           <span class="food-icon">🥩</span>
-          <div><div class="food-name">Lean Beef</div><div class="food-qty">200g — grilled or braised (max daily dose)</div></div>
+          <div><div class="food-name">Bœuf Maigre 5% ou Blanc de Poulet</div><div class="food-qty">200g — steak, bavette ou blanc grillé/vapeur</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 42g</span><span class="tag c">C 0g</span><span class="tag f">F 12g</span></div>
+        <div class="food-macros"><span class="tag p">P 40g</span><span class="tag c">C 0g</span><span class="tag f">F 10g</span></div>
       </div>
       <div class="food-row">
         <div class="food-left">
-          <span class="food-icon">🥔</span>
-          <div><div class="food-name">Boiled Potato</div><div class="food-qty">200g — no butter, plain or seasoned</div></div>
+          <span class="food-icon">🍚</span>
+          <div><div class="food-name">Riz / Pâtes complètes / Patate douce</div><div class="food-qty">70g cru (≈ 220–230g cuit) — légèrement augmenté</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 4g</span><span class="tag c">C 34g</span><span class="tag f">F 0g</span></div>
+        <div class="food-macros"><span class="tag p">P 5g</span><span class="tag c">C 54g</span><span class="tag f">F 1g</span></div>
       </div>
       <div class="food-row">
         <div class="food-left">
           <span class="food-icon">🥗</span>
-          <div><div class="food-name">Mixed Salad</div><div class="food-qty">150g — tomato, cucumber, lettuce, pepper</div></div>
+          <div><div class="food-name">Légumes variés</div><div class="food-qty">200g — salade, crudités, légumes cuits</div></div>
         </div>
         <div class="food-macros"><span class="tag p">P 2g</span><span class="tag c">C 8g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
         <div class="food-left">
           <span class="food-icon">🫒</span>
-          <div><div class="food-name">Olive Oil</div><div class="food-qty">1 teaspoon (5ml) on salad</div></div>
+          <div><div class="food-name">Huile d'olive ou Amandes</div><div class="food-qty">15g huile d'olive OU 20g amandes</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 4.5g</span></div>
+        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 14g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">48g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">42g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">16.5g</div><div class="mmb-lbl">Fat</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">46g</div><div class="mmb-lbl">Protéines</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">60g</div><div class="mmb-lbl">Glucides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">14g</div><div class="mmb-lbl">Lipides</div></div>
       </div>
     </div>
   </div>
 
-  <!-- MEAL 6 -->
+  <!-- PRE-WORKOUT -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">MEAL 6</div>
+      <div class="meal-num">PRÉ-SÉANCE</div>
       <div class="meal-info">
-        <div class="meal-time">🌙 21:30 — Before Bed</div>
-        <div class="meal-name">Sardines + Almonds</div>
+        <div class="meal-time">⚡ 30–60 min avant l'entraînement</div>
+        <div class="meal-name">Banane + Whey Iso + Café</div>
       </div>
-      <div class="meal-kcal">268<small>kcal</small></div>
+      <div class="meal-kcal">230<small>kcal</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
         <div class="food-left">
-          <span class="food-icon">🐟</span>
-          <div><div class="food-name">Canned Sardines</div><div class="food-qty">100g — in tomato sauce (drain excess)</div></div>
+          <span class="food-icon">🍌</span>
+          <div><div class="food-name">Banane Moyenne</div><div class="food-qty">120g — source rapide de glucides</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 20g</span><span class="tag c">C 3g</span><span class="tag f">F 8g</span></div>
+        <div class="food-macros"><span class="tag p">P 1g</span><span class="tag c">C 27g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
         <div class="food-left">
-          <span class="food-icon">🌰</span>
-          <div><div class="food-name">Almonds or Walnuts</div><div class="food-qty">15g — unsalted, raw</div></div>
+          <span class="food-icon">💪</span>
+          <div><div class="food-name">Iso Whey</div><div class="food-qty">30g — dans eau ou shaker</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 3.5g</span><span class="tag c">C 2.5g</span><span class="tag f">F 9g</span></div>
+        <div class="food-macros"><span class="tag p">P 25g</span><span class="tag c">C 1g</span><span class="tag f">F 1g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">☕</span>
+          <div><div class="food-name">Café Noir</div><div class="food-qty">sans sucre — boost énergie & focus</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">23.5g</div><div class="mmb-lbl">Protein</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">5.5g</div><div class="mmb-lbl">Carbs</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">17g</div><div class="mmb-lbl">Fat</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">27g</div><div class="mmb-lbl">Protéines</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">28g</div><div class="mmb-lbl">Glucides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">1g</div><div class="mmb-lbl">Lipides</div></div>
       </div>
     </div>
   </div>
 
-  <!-- DAILY TOTALS -->
+  <!-- POST-WORKOUT -->
+  <div class="meal-card">
+    <div class="meal-header" onclick="toggleMeal(this)">
+      <div class="meal-num">POST-SÉANCE</div>
+      <div class="meal-info">
+        <div class="meal-time">🏋️ Après l'entraînement</div>
+        <div class="meal-name">Poulet + Légumes Verts</div>
+      </div>
+      <div class="meal-kcal">300<small>kcal</small></div>
+    </div>
+    <div class="meal-body">
+      <div class="divider"></div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🍗</span>
+          <div><div class="food-name">Blanc de Poulet</div><div class="food-qty">250–270g cuit, sans peau</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 55g</span><span class="tag c">C 0g</span><span class="tag f">F 5g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🥦</span>
+          <div><div class="food-name">Légumes Verts</div><div class="food-qty">300–400g — concombre, courgette, brocoli, haricots verts…</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 4g</span><span class="tag c">C 6g</span><span class="tag f">F 0g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🧄</span>
+          <div><div class="food-name">Assaisonnement</div><div class="food-qty">sel, citron, épices, moutarde, ail — libre</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
+      </div>
+      <div class="meal-macro-bar">
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">58g</div><div class="mmb-lbl">Protéines</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">6g</div><div class="mmb-lbl">Glucides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">5g</div><div class="mmb-lbl">Lipides</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPAS 5 -->
+  <div class="meal-card">
+    <div class="meal-header" onclick="toggleMeal(this)">
+      <div class="meal-num">REPAS 5</div>
+      <div class="meal-info">
+        <div class="meal-time">🌙 Soir — Dernier Repas</div>
+        <div class="meal-name">Œufs + Thon + Skyr + Pain Complet</div>
+      </div>
+      <div class="meal-kcal">580<small>kcal</small></div>
+    </div>
+    <div class="meal-body">
+      <div class="divider"></div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🥚</span>
+          <div><div class="food-name">4 Œufs Entiers Bouillis</div><div class="food-qty">durs ou mollets — à votre goût</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 24g</span><span class="tag c">C 2g</span><span class="tag f">F 20g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🐟</span>
+          <div><div class="food-name">Thon au Naturel</div><div class="food-qty">50g égoutté — en boîte, au naturel</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 0g</span><span class="tag f">F 1g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🥛</span>
+          <div><div class="food-name">Skyr Nature 0%</div><div class="food-qty">100g — riche en caséine, idéal avant le coucher</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 4g</span><span class="tag f">F 0g</span></div>
+      </div>
+      <div class="food-row">
+        <div class="food-left">
+          <span class="food-icon">🍞</span>
+          <div><div class="food-name">Pain Complet</div><div class="food-qty">2 toasts (60–70g) — pain complet ou aux céréales</div></div>
+        </div>
+        <div class="food-macros"><span class="tag p">P 7g</span><span class="tag c">C 30g</span><span class="tag f">F 2g</span></div>
+      </div>
+      <div class="meal-macro-bar">
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">56g</div><div class="mmb-lbl">Protéines</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">37g</div><div class="mmb-lbl">Glucides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23g</div><div class="mmb-lbl">Lipides</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOTAUX JOURNALIERS -->
   <div class="total-bar">
-    <div class="total-title">✅ Daily Totals</div>
-    <div class="total-row"><span class="lbl">Total Calories</span><span class="big" style="color:var(--orange)">2 450 kcal</span></div>
-    <div class="total-row"><span class="lbl">Protein</span><span class="big" style="color:var(--lime)">206g</span></div>
-    <div class="total-row"><span class="lbl">Carbohydrates</span><span class="big" style="color:var(--yellow)">259g</span></div>
-    <div class="total-row"><span class="lbl">Fat</span><span class="big" style="color:var(--cyan)">66g</span></div>
+    <div class="total-title">✅ Totaux Journaliers</div>
+    <div class="total-row"><span class="lbl">Calories Totales</span><span class="big" style="color:var(--orange)">2 080 kcal</span></div>
+    <div class="total-row"><span class="lbl">Protéines</span><span class="big" style="color:var(--lime)">230g</span></div>
+    <div class="total-row"><span class="lbl">Glucides</span><span class="big" style="color:var(--yellow)">140g</span></div>
+    <div class="total-row"><span class="lbl">Lipides</span><span class="big" style="color:var(--cyan)">66g</span></div>
 
     <div class="progress-wrap">
       <div style="margin-bottom:8px">
-        <div class="progress-label"><span style="color:var(--lime)">Protein 34%</span><span>206g</span></div>
-        <div class="progress-track"><div class="progress-fill" style="width:34%;background:var(--lime)"></div></div>
+        <div class="progress-label"><span style="color:var(--lime)">Protéines 44%</span><span>230g</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:44%;background:var(--lime)"></div></div>
       </div>
       <div style="margin-bottom:8px">
-        <div class="progress-label"><span style="color:var(--yellow)">Carbs 42%</span><span>259g</span></div>
-        <div class="progress-track"><div class="progress-fill" style="width:42%;background:var(--yellow)"></div></div>
+        <div class="progress-label"><span style="color:var(--yellow)">Glucides 27%</span><span>140g</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:27%;background:var(--yellow)"></div></div>
       </div>
       <div>
-        <div class="progress-label"><span style="color:var(--cyan)">Fat 24%</span><span>66g</span></div>
-        <div class="progress-track"><div class="progress-fill" style="width:24%;background:var(--cyan)"></div></div>
+        <div class="progress-label"><span style="color:var(--cyan)">Lipides 29%</span><span>66g</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:29%;background:var(--cyan)"></div></div>
       </div>
     </div>
   </div>
@@ -646,52 +633,52 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <!-- ══════════ TIPS TAB ══════════ -->
 <div class="section" id="sec-tips">
 
-  <p class="meals-header">Nutritionist <em>Guidelines</em></p>
+  <p class="meals-header">Conseils du <em>Nutritionniste</em></p>
 
   <div class="tip-card" style="border-color:var(--lime)">
-    <div class="tip-title" style="color:var(--lime)">💧 Hydration</div>
-    Drink minimum <strong>3–3.5L of water per day</strong>. As a mechanic working physically, dehydration will kill performance and slow fat loss. Start every morning with a large glass before meal 1.
+    <div class="tip-title" style="color:var(--lime)">💧 Hydratation</div>
+    Boire minimum <strong>3–3.5L d'eau par jour</strong>. En tant que mécanicien avec une activité physique soutenue, la déshydratation nuira à vos performances et ralentira la perte de graisse. Commencez chaque matin avec un grand verre d'eau avant le repas 1.
   </div>
 
   <div class="tip-card" style="border-color:var(--orange)">
     <div class="tip-title" style="color:var(--orange)">🍳 Meal Prep (Dimanche)</div>
-    Cook chicken, rice and potatoes in bulk every Sunday. Pre-portion into containers. This makes hitting macros on busy work days non-negotiable.
+    Cuisinez le poulet, le riz et les légumes en grandes quantités chaque dimanche. Pré-portionnez dans des boîtes. Cela rend le respect des macros non négociable les jours de travail chargés.
   </div>
 
   <div class="tip-card" style="border-color:var(--yellow)">
-    <div class="tip-title" style="color:var(--yellow)">⚙️ Carb Timing</div>
-    Put the majority of carbs <strong>around training</strong> (Meal 3 lunch & Meal 4 pre-workout). On rest days, reduce Meal 4 carbs by 50% — swap sweet potato for extra veggies or a smaller portion.
+    <div class="tip-title" style="color:var(--yellow)">⚙️ Timing des Glucides</div>
+    Concentrez la majorité des glucides <strong>autour de l'entraînement</strong> (Repas 2 midi + Pré-séance). Les jours de repos, réduisez les glucides du pré-séance de 50% — remplacez la banane par des légumes ou une portion plus petite.
   </div>
 
   <div class="tip-card" style="border-color:var(--cyan)">
-    <div class="tip-title" style="color:var(--cyan)">🥩 Beef Rotation</div>
-    Beef is capped at 200g/day (fat content). On days without beef, replace with: <strong>200g chicken</strong> for dinner, or <strong>150g canned sardines</strong> for higher omega-3 intake. Rotate sardines 2–3x per week.
+    <div class="tip-title" style="color:var(--cyan)">🥩 Rotation Bœuf / Poulet</div>
+    Le bœuf est limité à 200g/jour (teneur en graisses). Les jours sans bœuf, remplacez par : <strong>200g de blanc de poulet</strong> au dîner, ou <strong>150g de sardines en boîte</strong> pour augmenter les oméga-3. Faites tourner les sardines 2–3x par semaine.
   </div>
 
   <div class="tip-card" style="border-color:var(--pink)">
-    <div class="tip-title" style="color:var(--pink)">🚫 What to Avoid</div>
-    <strong>Merguez, fried food (méchoui style), Algerian pastries (baklawa, zlabia), soft drinks, harissa in excess, too much bread</strong>. These will break the deficit silently without feeling like a cheat.
+    <div class="tip-title" style="color:var(--pink)">🚫 À Éviter</div>
+    <strong>Merguez, fritures (style méchoui), pâtisseries algériennes (baklawa, zlabia), sodas, harissa en excès, trop de pain blanc</strong>. Ces aliments casseront le déficit silencieusement sans donner l'impression de tricher.
   </div>
 
   <div class="tip-card" style="border-color:var(--muted)">
-    <div class="tip-title" style="color:var(--sub)">🌿 Free Vegetables</div>
-    The following can be eaten freely (no tracking needed): <strong>lettuce, cucumber, tomato, courgette, green pepper, spinach, fresh herbs (coriander, parsley), lemon juice</strong>. These add volume, fiber and micronutrients with near-zero calories.
+    <div class="tip-title" style="color:var(--sub)">🌿 Légumes Libres</div>
+    Les légumes suivants peuvent être consommés librement (pas de comptage nécessaire) : <strong>laitue, concombre, tomate, courgette, poivron vert, épinards, herbes fraîches (coriandre, persil), jus de citron</strong>. Ils apportent volume, fibres et micronutriments avec quasi zéro calories.
   </div>
 
   <div style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px;">
-    <div class="calc-title">📅 Weekly Structure</div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Monday</div><div class="day-tag train">Training</div><div class="day-note">Full macros</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Tuesday</div><div class="day-tag train">Training</div><div class="day-note">Full macros</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Wednesday</div><div class="day-tag rest">Rest</div><div class="day-note">−50g carbs</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Thursday</div><div class="day-tag train">Training</div><div class="day-note">Full macros</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Friday</div><div class="day-tag train">Training</div><div class="day-note">Full macros</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Saturday</div><div class="day-tag rest">Rest</div><div class="day-note">−50g carbs</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Sunday</div><div class="day-tag rest">Meal Prep</div><div class="day-note">−50g carbs</div></div>
+    <div class="calc-title">📅 Structure Hebdomadaire</div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Lundi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Mardi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Mercredi</div><div class="day-tag rest">Repos</div><div class="day-note">−50g glucides</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Jeudi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Vendredi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Samedi</div><div class="day-tag rest">Repos</div><div class="day-note">−50g glucides</div></div>
+    <div class="day-row"><div class="day-label" style="color:var(--text)">Dimanche</div><div class="day-tag rest">Meal Prep</div><div class="day-note">−50g glucides</div></div>
   </div>
 
   <div class="tip-card" style="border-color:var(--orange)">
-    <div class="tip-title" style="color:var(--orange)">📏 Re-assessment Schedule</div>
-    Take new body measurements <strong>every 2 weeks</strong> (same time of day, morning, empty stomach). If weight loss stalls for 2+ weeks, reduce carbs by 20g and reassess. Log everything in the body tracker.
+    <div class="tip-title" style="color:var(--orange)">📏 Calendrier de Réévaluation</div>
+    Prenez de nouvelles mensurations corporelles <strong>toutes les 2 semaines</strong> (même heure, le matin à jeun). Si la perte de poids stagne pendant 2+ semaines, réduisez les glucides de 20g et réévaluez. Notez tout dans le suivi corporel.
   </div>
 
 </div><!-- /tips -->
@@ -711,8 +698,8 @@ function toggleMeal(header) {
   body.classList.toggle('open');
 }
 
-// Open meal 3 (biggest) by default
-document.querySelectorAll('.meal-header')[2].click();
+// Ouvrir le repas 2 (principal) par défaut
+document.querySelectorAll('.meal-header')[1].click();
 </script>
 </body>
 </html>
