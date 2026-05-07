@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Mounir — Plan Nutritionnel</title>
+<title>منير — الخطة الغذائية</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap');
 
 :root {
   --bg: #070d1a;
@@ -28,9 +28,10 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   min-height: 100vh;
   padding-bottom: 60px;
+  direction: rtl;
 }
 
 /* ─── HERO HEADER ─── */
@@ -44,22 +45,22 @@ body {
 .hero::after {
   content: '';
   position: absolute;
-  top: -80px; right: -80px;
+  top: -80px; left: -80px;
   width: 260px; height: 260px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 65%);
   pointer-events: none;
 }
 .hero-eyebrow {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 700; font-size: 11px;
-  letter-spacing: 4px; text-transform: uppercase;
+  letter-spacing: 2px;
   color: var(--orange); margin-bottom: 6px;
 }
 .hero h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 36px; font-weight: 900;
-  letter-spacing: -0.5px; line-height: 1;
+  font-family: 'Cairo', sans-serif;
+  font-size: 34px; font-weight: 900;
+  line-height: 1.2;
   margin-bottom: 4px;
 }
 .hero h1 em { color: var(--orange); font-style: normal; }
@@ -75,18 +76,18 @@ body {
 .stat-box {
   background: var(--card2); padding: 12px 10px; text-align: center;
 }
-.stat-box:first-child { border-radius: 0; }
-.stat-label { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-.stat-val { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--text); line-height: 1; }
-.stat-val small { font-size: 11px; color: var(--muted); font-weight: 400; font-family: 'DM Sans', sans-serif; }
+.stat-label { font-size: 9px; letter-spacing: 1px; color: var(--muted); margin-bottom: 3px; font-family: 'Cairo', sans-serif; }
+.stat-val { font-family: 'Cairo', sans-serif; font-size: 20px; font-weight: 800; color: var(--text); line-height: 1; }
+.stat-val small { font-size: 10px; color: var(--muted); font-weight: 400; font-family: 'Tajawal', sans-serif; display: block; }
 
 /* ─── TABS ─── */
-.tabs-row { display: flex; gap: 0; padding: 0 16px; background: var(--card2); border-bottom: 1px solid var(--border); }
+.tabs-row { display: flex; flex-direction: row-reverse; gap: 0; padding: 0 16px; background: var(--card2); border-bottom: 1px solid var(--border); overflow-x: auto; }
 .tab {
-  padding: 12px 14px; font-size: 12px; font-weight: 600;
+  padding: 12px 14px; font-size: 12px; font-weight: 700;
   color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent;
   transition: all 0.15s; white-space: nowrap;
   background: none; border-top: none; border-left: none; border-right: none;
+  font-family: 'Cairo', sans-serif;
 }
 .tab.active { color: var(--orange); border-bottom-color: var(--orange); }
 
@@ -102,14 +103,15 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   border-top: 3px solid var(--orange);
   border-radius: 14px; padding: 20px; margin-bottom: 16px;
   display: flex; align-items: center; gap: 16px;
+  flex-direction: row-reverse;
 }
 .cal-number {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 72px; font-weight: 900; line-height: 1;
+  font-family: 'Cairo', sans-serif;
+  font-size: 64px; font-weight: 900; line-height: 1;
   color: var(--orange); letter-spacing: -2px; flex-shrink: 0;
 }
 .cal-detail { flex: 1; }
-.cal-detail h3 { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.cal-detail h3 { font-size: 13px; font-weight: 700; margin-bottom: 8px; font-family: 'Cairo', sans-serif; }
 .cal-row { display: flex; justify-content: space-between; font-size: 11px; padding: 3px 0; color: var(--sub); border-bottom: 1px solid rgba(255,255,255,0.04); }
 .cal-row:last-child { border: none; }
 .cal-row span { font-weight: 700; color: var(--text); }
@@ -131,11 +133,11 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 .macro-pill.carb::before { background: var(--yellow); }
 .macro-pill.fat { background: linear-gradient(145deg,#0d1f30,#060f1a); }
 .macro-pill.fat::before { background: var(--cyan); }
-.pill-g { font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 900; line-height: 1; margin-bottom: 2px; }
+.pill-g { font-family: 'Cairo', sans-serif; font-size: 32px; font-weight: 900; line-height: 1; margin-bottom: 2px; }
 .macro-pill.prot .pill-g { color: var(--lime); }
 .macro-pill.carb .pill-g { color: var(--yellow); }
 .macro-pill.fat .pill-g { color: var(--cyan); }
-.pill-label { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.pill-label { font-size: 10px; color: var(--muted); font-family: 'Cairo', sans-serif; font-weight: 700; }
 .pill-kcal { font-size: 10px; color: var(--muted); margin-top: 2px; }
 
 /* ─── CALC BREAKDOWN ─── */
@@ -143,7 +145,7 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   background: var(--card2); border: 1px solid var(--border);
   border-radius: 12px; padding: 16px; margin-bottom: 14px;
 }
-.calc-title { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 600; }
+.calc-title { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-weight: 700; font-family: 'Cairo', sans-serif; }
 .calc-line {
   display: flex; justify-content: space-between; align-items: center;
   padding: 9px 12px; border-radius: 8px; margin-bottom: 4px;
@@ -154,10 +156,10 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 .calc-line.row3 { background: rgba(251,191,36,0.07); }
 .calc-line.row4 { background: rgba(163,230,53,0.12); border: 1px solid rgba(163,230,53,0.2); }
 .calc-line .lbl { color: var(--sub); font-size: 12px; }
-.calc-line .val { font-weight: 700; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; letter-spacing: 0.5px; }
+.calc-line .val { font-weight: 800; font-family: 'Cairo', sans-serif; font-size: 17px; }
 
 /* ─── MEAL CARDS ─── */
-.meals-header { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: 0.5px; margin-bottom: 14px; }
+.meals-header { font-family: 'Cairo', sans-serif; font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 14px; }
 .meals-header em { color: var(--orange); font-style: normal; }
 
 .meal-card {
@@ -170,22 +172,23 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 .meal-header {
   display: flex; align-items: center; gap: 12px;
   padding: 14px 16px; cursor: pointer; user-select: none;
+  flex-direction: row-reverse;
 }
 .meal-num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px; font-weight: 800; letter-spacing: 2px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 11px; font-weight: 800;
   color: var(--orange); background: rgba(249,115,22,0.1);
   border: 1px solid rgba(249,115,22,0.2);
   border-radius: 6px; padding: 3px 8px; flex-shrink: 0;
 }
-.meal-info { flex: 1; }
+.meal-info { flex: 1; text-align: right; }
 .meal-time { font-size: 11px; color: var(--muted); }
-.meal-name { font-size: 14px; font-weight: 700; margin-top: 1px; }
+.meal-name { font-size: 14px; font-weight: 700; margin-top: 1px; font-family: 'Cairo', sans-serif; }
 .meal-kcal {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 20px; font-weight: 800; color: var(--orange); flex-shrink: 0;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px; font-weight: 800; color: var(--orange); flex-shrink: 0; text-align: left;
 }
-.meal-kcal small { font-size: 10px; color: var(--muted); font-family: 'DM Sans'; font-weight: 400; display: block; text-align: right; }
+.meal-kcal small { font-size: 10px; color: var(--muted); font-family: 'Tajawal'; font-weight: 400; display: block; text-align: center; }
 
 .meal-body { padding: 0 16px 14px; display: none; }
 .meal-body.open { display: block; }
@@ -195,17 +198,17 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 8px 10px; border-radius: 8px; margin-bottom: 6px;
   background: rgba(255,255,255,0.02);
-  font-size: 12px;
+  font-size: 12px; flex-direction: row-reverse;
 }
 .food-row:last-of-type { margin-bottom: 12px; }
-.food-left { display: flex; align-items: center; gap: 8px; }
+.food-left { display: flex; align-items: center; gap: 8px; flex-direction: row-reverse; }
 .food-icon { font-size: 16px; }
-.food-name { font-weight: 500; color: var(--text); }
-.food-qty { font-size: 10px; color: var(--muted); margin-top: 1px; }
-.food-macros { display: flex; gap: 6px; }
+.food-name { font-weight: 600; color: var(--text); text-align: right; font-family: 'Cairo', sans-serif; font-size: 12px; }
+.food-qty { font-size: 10px; color: var(--muted); margin-top: 1px; text-align: right; }
+.food-macros { display: flex; gap: 5px; flex-direction: row-reverse; }
 .tag {
   font-size: 9px; font-weight: 700; padding: 2px 5px; border-radius: 4px;
-  letter-spacing: 0.3px;
+  font-family: 'Cairo', sans-serif;
 }
 .tag.p { background: rgba(163,230,53,0.12); color: var(--lime); }
 .tag.c { background: rgba(251,191,36,0.12); color: var(--yellow); }
@@ -217,30 +220,33 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   border-radius: 8px; padding: 10px;
 }
 .mmb-item { text-align: center; }
-.mmb-val { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 800; }
-.mmb-lbl { font-size: 9px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.mmb-val { font-family: 'Cairo', sans-serif; font-size: 18px; font-weight: 800; }
+.mmb-lbl { font-size: 9px; color: var(--muted); font-family: 'Cairo', sans-serif; font-weight: 600; }
 
 /* ─── TIPS ─── */
 .tip-card {
   background: var(--card2); border: 1px solid var(--border);
-  border-left: 3px solid; border-radius: 10px; padding: 12px 14px;
-  margin-bottom: 10px; font-size: 12px; line-height: 1.6;
+  border-right: 3px solid; border-left: none; border-radius: 10px; padding: 12px 14px;
+  margin-bottom: 10px; font-size: 13px; line-height: 1.8;
+  text-align: right;
 }
-.tip-title { font-weight: 700; font-size: 12px; margin-bottom: 4px; }
+.tip-title { font-weight: 800; font-size: 13px; margin-bottom: 6px; font-family: 'Cairo', sans-serif; }
 
 /* ─── WEEKLY SCHEDULE ─── */
 .day-row {
   display: flex; align-items: center; gap: 10px;
   padding: 10px 12px; background: var(--card2);
   border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px;
+  flex-direction: row-reverse;
 }
-.day-label { font-weight: 700; font-size: 12px; min-width: 90px; }
+.day-label { font-weight: 700; font-size: 12px; min-width: 70px; text-align: right; font-family: 'Cairo', sans-serif; }
 .day-tag {
-  font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 6px; letter-spacing: 0.5px;
+  font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 6px;
+  font-family: 'Cairo', sans-serif;
 }
 .day-tag.train { background: rgba(249,115,22,0.15); color: var(--orange); }
 .day-tag.rest { background: rgba(74,96,128,0.2); color: var(--muted); }
-.day-note { font-size: 11px; color: var(--sub); margin-left: auto; }
+.day-note { font-size: 11px; color: var(--sub); margin-right: auto; text-align: left; }
 
 /* ─── TOTAL BAR ─── */
 .total-bar {
@@ -249,14 +255,14 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   border-radius: 14px; padding: 16px;
   margin-top: 4px;
 }
-.total-title { font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
-.total-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+.total-title { font-size: 11px; color: var(--muted); margin-bottom: 12px; font-weight: 700; font-family: 'Cairo', sans-serif; text-align: right; }
+.total-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; flex-direction: row-reverse; }
 .total-row:last-child { border: none; padding-top: 10px; }
-.total-row .lbl { color: var(--sub); }
-.total-row .big { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; }
+.total-row .lbl { color: var(--sub); font-family: 'Cairo', sans-serif; }
+.total-row .big { font-family: 'Cairo', sans-serif; font-size: 22px; font-weight: 800; }
 
 .progress-wrap { margin-top: 10px; }
-.progress-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+.progress-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-bottom: 4px; flex-direction: row-reverse; }
 .progress-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; }
 .progress-fill { height: 100%; border-radius: 10px; transition: width 1s ease; }
 </style>
@@ -265,35 +271,35 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 
 <!-- HERO -->
 <div class="hero">
-  <p class="hero-eyebrow">🏋️ Programme Sèche Estivale — Blueprint Nutritionnel</p>
-  <h1>Mounir <em>/ Plan Perte de Graisse</em></h1>
-  <p class="hero-sub">96 kg · 179 cm · 25 ans · Mécanicien (Activité Modérée)</p>
+  <p class="hero-eyebrow">🏋️ برنامج تحسين الجسم الصيفي — الخطة الغذائية</p>
+  <h1>منير <em>/ خطة حرق الدهون</em></h1>
+  <p class="hero-sub">96 كغ · 179 سم · 25 سنة · ميكانيكي (نشاط معتدل)</p>
 
   <div class="stats-row">
     <div class="stat-box">
-      <div class="stat-label">MB</div>
-      <div class="stat-val">1959<small>kcal</small></div>
+      <div class="stat-label">الأيض الأساسي</div>
+      <div class="stat-val">1959<small>سعرة</small></div>
     </div>
     <div class="stat-box">
-      <div class="stat-label">TDEE</div>
-      <div class="stat-val">3036<small>kcal</small></div>
+      <div class="stat-label">إجمالي الحرق</div>
+      <div class="stat-val">3036<small>سعرة</small></div>
     </div>
     <div class="stat-box">
-      <div class="stat-label">Déficit</div>
-      <div class="stat-val">−550<small>kcal</small></div>
+      <div class="stat-label">العجز</div>
+      <div class="stat-val">−550<small>سعرة</small></div>
     </div>
     <div class="stat-box">
-      <div class="stat-label">Objectif</div>
-      <div class="stat-val" style="color:var(--orange)">2080<small>kcal</small></div>
+      <div class="stat-label">الهدف اليومي</div>
+      <div class="stat-val" style="color:var(--orange)">2080<small>سعرة</small></div>
     </div>
   </div>
 </div>
 
 <!-- TABS -->
 <div class="tabs-row">
-  <button class="tab active" onclick="switchTab('macros')">📊 Macros</button>
-  <button class="tab" onclick="switchTab('meals')">🍽️ Plan Journalier</button>
-  <button class="tab" onclick="switchTab('tips')">💡 Conseils</button>
+  <button class="tab active" onclick="switchTab('macros',this)">📊 المغذيات</button>
+  <button class="tab" onclick="switchTab('meals',this)">🍽️ الخطة اليومية</button>
+  <button class="tab" onclick="switchTab('tips',this)">💡 نصائح</button>
 </div>
 
 <main>
@@ -304,70 +310,70 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
   <div class="calories-hero">
     <div class="cal-number">2080</div>
     <div class="cal-detail">
-      <h3>Objectif Calorique Journalier</h3>
-      <div class="cal-row">MB (Mifflin-St Jeor) <span>1 959 kcal</span></div>
-      <div class="cal-row">× Activité (Mécanicien 1.55) <span>3 036 kcal</span></div>
-      <div class="cal-row">Déficit Perte de Graisse <span>− 550 kcal</span></div>
-      <div class="cal-row" style="color:var(--orange)">🎯 Objectif Journalier <span style="color:var(--orange)">2 080 kcal</span></div>
+      <h3>الهدف الكالوري اليومي</h3>
+      <div class="cal-row">الأيض الأساسي (معادلة ميفلين) <span>1,959 سعرة</span></div>
+      <div class="cal-row">× معامل النشاط (ميكانيكي 1.55) <span>3,036 سعرة</span></div>
+      <div class="cal-row">عجز حرق الدهون <span>− 550 سعرة</span></div>
+      <div class="cal-row" style="color:var(--orange)">🎯 الهدف اليومي <span style="color:var(--orange)">2,080 سعرة</span></div>
     </div>
   </div>
 
   <div class="macro-pills">
     <div class="macro-pill prot">
-      <div class="pill-g">230<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Protéines</div>
-      <div class="pill-kcal">920 kcal · 44%</div>
+      <div class="pill-g">230<span style="font-size:14px">غ</span></div>
+      <div class="pill-label">بروتين</div>
+      <div class="pill-kcal">920 سعرة · 44%</div>
     </div>
     <div class="macro-pill carb">
-      <div class="pill-g">140<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Glucides</div>
-      <div class="pill-kcal">560 kcal · 27%</div>
+      <div class="pill-g">140<span style="font-size:14px">غ</span></div>
+      <div class="pill-label">كربوهيدرات</div>
+      <div class="pill-kcal">560 سعرة · 27%</div>
     </div>
     <div class="macro-pill fat">
-      <div class="pill-g">66<span style="font-size:16px">g</span></div>
-      <div class="pill-label">Lipides</div>
-      <div class="pill-kcal">594 kcal · 29%</div>
+      <div class="pill-g">66<span style="font-size:14px">غ</span></div>
+      <div class="pill-label">دهون</div>
+      <div class="pill-kcal">594 سعرة · 29%</div>
     </div>
   </div>
 
   <div class="calc-card">
-    <div class="calc-title">📐 Calcul des Protéines</div>
+    <div class="calc-title">📐 حساب البروتين</div>
     <div class="calc-line row1">
+      <div class="val" style="color:var(--lime)">202غ</div>
       <div>
-        <div style="font-weight:600;font-size:13px">Minimum (×2.1)</div>
-        <div class="lbl">Seuil bas pour préserver la masse musculaire</div>
+        <div style="font-weight:700;font-size:13px;text-align:right">الحد الأدنى (×2.1)</div>
+        <div class="lbl">الحد الأدنى للحفاظ على الكتلة العضلية</div>
       </div>
-      <div class="val" style="color:var(--lime)">202g</div>
     </div>
     <div class="calc-line row4">
+      <div class="val" style="color:var(--lime)">207غ</div>
       <div>
-        <div style="font-weight:600;font-size:13px">✓ Utilisé (×2.15)</div>
-        <div class="lbl">96 kg × 2.15 — optimal pour la sèche</div>
+        <div style="font-weight:700;font-size:13px;text-align:right">✓ المستخدم (×2.15)</div>
+        <div class="lbl">96 كغ × 2.15 — مثالي لمرحلة التنشيف</div>
       </div>
-      <div class="val" style="color:var(--lime)">207g</div>
     </div>
     <div class="calc-line row2">
+      <div class="val" style="color:var(--lime)">211غ</div>
       <div>
-        <div style="font-weight:600;font-size:13px">Maximum (×2.2)</div>
-        <div class="lbl">Seuil haut</div>
+        <div style="font-weight:700;font-size:13px;text-align:right">الحد الأقصى (×2.2)</div>
+        <div class="lbl">الحد الأعلى</div>
       </div>
-      <div class="val" style="color:var(--lime)">211g</div>
     </div>
   </div>
 
   <div class="calc-card">
-    <div class="calc-title">⚡ Rythme de Perte de Graisse Estimé</div>
+    <div class="calc-title">⚡ معدل حرق الدهون المتوقع</div>
     <div class="calc-line row1">
-      <div><div style="font-weight:600;font-size:13px">Déficit hebdomadaire</div><div class="lbl">550 kcal/jour × 7</div></div>
-      <div class="val" style="color:var(--orange)">3 850 kcal</div>
+      <div class="val" style="color:var(--orange)">3,850 سعرة</div>
+      <div><div style="font-weight:700;font-size:13px;text-align:right">العجز الأسبوعي</div><div class="lbl">550 سعرة/يوم × 7</div></div>
     </div>
     <div class="calc-line row3">
-      <div><div style="font-weight:600;font-size:13px">Perte de graisse / semaine</div><div class="lbl">~0.5 kg de graisse pure (rythme sain)</div></div>
-      <div class="val" style="color:var(--yellow)">~0.5 kg</div>
+      <div class="val" style="color:var(--yellow)">~0.5 كغ</div>
+      <div><div style="font-weight:700;font-size:13px;text-align:right">حرق دهون / أسبوع</div><div class="lbl">~0.5 كغ دهون صافية (وتيرة صحية)</div></div>
     </div>
     <div class="calc-line row4">
-      <div><div style="font-weight:600;font-size:13px">Projection sur 12 semaines</div><div class="lbl">Objectif prêt pour l'été</div></div>
-      <div class="val" style="color:var(--lime)">~6 kg de graisse</div>
+      <div class="val" style="color:var(--lime)">~6 كغ دهون</div>
+      <div><div style="font-weight:700;font-size:13px;text-align:right">توقعات 12 أسبوع</div><div class="lbl">جاهز للصيف</div></div>
     </div>
   </div>
 
@@ -376,253 +382,253 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <!-- ══════════ MEALS TAB ══════════ -->
 <div class="section" id="sec-meals">
 
-  <p class="meals-header">Blueprint <em>Journalier — 5 Repas</em></p>
+  <p class="meals-header">الخطة <em>اليومية — 5 وجبات</em></p>
 
-  <!-- REPAS 1 -->
+  <!-- وجبة 1 -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">REPAS 1</div>
+      <div class="meal-num">الوجبة 1</div>
       <div class="meal-info">
-        <div class="meal-time">🌅 Matin — Protéines + Lipides</div>
-        <div class="meal-name">Omelette Œufs + Skyr + Amandes</div>
+        <div class="meal-time">🌅 الصباح — بروتين + دهون</div>
+        <div class="meal-name">عجة البيض + سكير + لوز</div>
       </div>
-      <div class="meal-kcal">410<small>kcal</small></div>
+      <div class="meal-kcal">410<small>سعرة</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 24غ</span><span class="tag c">ك 1غ</span><span class="tag f">د 10غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥚</span>
-          <div><div class="food-name">4 Blancs d'œufs + 2 Œufs entiers</div><div class="food-qty">omelette ou brouillés — sans matière grasse</div></div>
+          <div><div class="food-name">4 بياض بيض + 2 بيضة كاملة</div><div class="food-qty">عجة أو مخفوقة — بدون زيت</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 24g</span><span class="tag c">C 1g</span><span class="tag f">F 10g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 11غ</span><span class="tag c">ك 4غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥛</span>
-          <div><div class="food-name">Skyr Nature</div><div class="food-qty">100g — riche en protéines, faible en graisses</div></div>
+          <div><div class="food-name">سكير طبيعي</div><div class="food-qty">100غ — غني بالبروتين، قليل الدهون</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 4g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 6غ</span><span class="tag c">ك 3غ</span><span class="tag f">د 13غ</span></div>
         <div class="food-left">
           <span class="food-icon">🌰</span>
-          <div><div class="food-name">Amandes</div><div class="food-qty">30g — ou 10g d'huile d'olive (au choix)</div></div>
+          <div><div class="food-name">لوز</div><div class="food-qty">30غ — أو 10غ زيت زيتون (اختيار)</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 6g</span><span class="tag c">C 3g</span><span class="tag f">F 13g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 0غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">☕</span>
-          <div><div class="food-name">Café ou Thé</div><div class="food-qty">sans sucre — quantité libre</div></div>
+          <div><div class="food-name">قهوة أو شاي</div><div class="food-qty">بدون سكر — كمية حرة</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">43g</div><div class="mmb-lbl">Protéines</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">9g</div><div class="mmb-lbl">Glucides</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23g</div><div class="mmb-lbl">Lipides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">43غ</div><div class="mmb-lbl">بروتين</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">9غ</div><div class="mmb-lbl">كربوهيدرات</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23غ</div><div class="mmb-lbl">دهون</div></div>
       </div>
     </div>
   </div>
 
-  <!-- REPAS 2 -->
+  <!-- وجبة 2 -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">REPAS 2</div>
+      <div class="meal-num">الوجبة 2</div>
       <div class="meal-info">
-        <div class="meal-time">🕑 Midi — Repas Principal</div>
-        <div class="meal-name">Bœuf / Poulet + Riz + Légumes</div>
+        <div class="meal-time">🕑 الظهر — الوجبة الرئيسية</div>
+        <div class="meal-name">لحم / دجاج + أرز + خضروات</div>
       </div>
-      <div class="meal-kcal">560<small>kcal</small></div>
+      <div class="meal-kcal">560<small>سعرة</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 40غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 10غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥩</span>
-          <div><div class="food-name">Bœuf Maigre 5% ou Blanc de Poulet</div><div class="food-qty">200g — steak, bavette ou blanc grillé/vapeur</div></div>
+          <div><div class="food-name">لحم بقري خالي الدهن 5% أو صدر دجاج</div><div class="food-qty">200غ — مشوي أو على البخار</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 40g</span><span class="tag c">C 0g</span><span class="tag f">F 10g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 5غ</span><span class="tag c">ك 54غ</span><span class="tag f">د 1غ</span></div>
         <div class="food-left">
           <span class="food-icon">🍚</span>
-          <div><div class="food-name">Riz / Pâtes complètes / Patate douce</div><div class="food-qty">70g cru (≈ 220–230g cuit) — légèrement augmenté</div></div>
+          <div><div class="food-name">أرز / معكرونة كاملة / بطاطا حلوة</div><div class="food-qty">70غ نيئ (≈ 220-230غ مطبوخ)</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 5g</span><span class="tag c">C 54g</span><span class="tag f">F 1g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 2غ</span><span class="tag c">ك 8غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥗</span>
-          <div><div class="food-name">Légumes variés</div><div class="food-qty">200g — salade, crudités, légumes cuits</div></div>
+          <div><div class="food-name">خضروات متنوعة</div><div class="food-qty">200غ — سلطة، خضار نيئة، خضار مطبوخة</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 2g</span><span class="tag c">C 8g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 0غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 14غ</span></div>
         <div class="food-left">
           <span class="food-icon">🫒</span>
-          <div><div class="food-name">Huile d'olive ou Amandes</div><div class="food-qty">15g huile d'olive OU 20g amandes</div></div>
+          <div><div class="food-name">زيت زيتون أو لوز</div><div class="food-qty">15غ زيت زيتون أو 20غ لوز</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 14g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">46g</div><div class="mmb-lbl">Protéines</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">60g</div><div class="mmb-lbl">Glucides</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">14g</div><div class="mmb-lbl">Lipides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">46غ</div><div class="mmb-lbl">بروتين</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">60غ</div><div class="mmb-lbl">كربوهيدرات</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">14غ</div><div class="mmb-lbl">دهون</div></div>
       </div>
     </div>
   </div>
 
-  <!-- PRE-WORKOUT -->
+  <!-- ما قبل التمرين -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">PRÉ-SÉANCE</div>
+      <div class="meal-num">قبل التمرين</div>
       <div class="meal-info">
-        <div class="meal-time">⚡ 30–60 min avant l'entraînement</div>
-        <div class="meal-name">Banane + Whey Iso + Café</div>
+        <div class="meal-time">⚡ 30-60 دقيقة قبل التمرين</div>
+        <div class="meal-name">موز + واي بروتين + قهوة</div>
       </div>
-      <div class="meal-kcal">230<small>kcal</small></div>
+      <div class="meal-kcal">230<small>سعرة</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 1غ</span><span class="tag c">ك 27غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🍌</span>
-          <div><div class="food-name">Banane Moyenne</div><div class="food-qty">120g — source rapide de glucides</div></div>
+          <div><div class="food-name">موزة متوسطة</div><div class="food-qty">120غ — مصدر سريع للكربوهيدرات</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 1g</span><span class="tag c">C 27g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 25غ</span><span class="tag c">ك 1غ</span><span class="tag f">د 1غ</span></div>
         <div class="food-left">
           <span class="food-icon">💪</span>
-          <div><div class="food-name">Iso Whey</div><div class="food-qty">30g — dans eau ou shaker</div></div>
+          <div><div class="food-name">Iso Whey بروتين</div><div class="food-qty">30غ — مع الماء في الشاكر</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 25g</span><span class="tag c">C 1g</span><span class="tag f">F 1g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 0غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">☕</span>
-          <div><div class="food-name">Café Noir</div><div class="food-qty">sans sucre — boost énergie & focus</div></div>
+          <div><div class="food-name">قهوة سوداء</div><div class="food-qty">بدون سكر — تعزيز الطاقة والتركيز</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">27g</div><div class="mmb-lbl">Protéines</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">28g</div><div class="mmb-lbl">Glucides</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">1g</div><div class="mmb-lbl">Lipides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">27غ</div><div class="mmb-lbl">بروتين</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">28غ</div><div class="mmb-lbl">كربوهيدرات</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">1غ</div><div class="mmb-lbl">دهون</div></div>
       </div>
     </div>
   </div>
 
-  <!-- POST-WORKOUT -->
+  <!-- بعد التمرين -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">POST-SÉANCE</div>
+      <div class="meal-num">بعد التمرين</div>
       <div class="meal-info">
-        <div class="meal-time">🏋️ Après l'entraînement</div>
-        <div class="meal-name">Poulet + Légumes Verts</div>
+        <div class="meal-time">🏋️ بعد التمرين مباشرة</div>
+        <div class="meal-name">دجاج + خضروات خضراء</div>
       </div>
-      <div class="meal-kcal">300<small>kcal</small></div>
+      <div class="meal-kcal">300<small>سعرة</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 55غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 5غ</span></div>
         <div class="food-left">
           <span class="food-icon">🍗</span>
-          <div><div class="food-name">Blanc de Poulet</div><div class="food-qty">250–270g cuit, sans peau</div></div>
+          <div><div class="food-name">صدر دجاج</div><div class="food-qty">250-270غ مطبوخ، بدون جلد</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 55g</span><span class="tag c">C 0g</span><span class="tag f">F 5g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 4غ</span><span class="tag c">ك 6غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥦</span>
-          <div><div class="food-name">Légumes Verts</div><div class="food-qty">300–400g — concombre, courgette, brocoli, haricots verts…</div></div>
+          <div><div class="food-name">خضروات خضراء</div><div class="food-qty">300-400غ — خيار، كوسة، بروكلي، فاصوليا خضراء...</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 4g</span><span class="tag c">C 6g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 0غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🧄</span>
-          <div><div class="food-name">Assaisonnement</div><div class="food-qty">sel, citron, épices, moutarde, ail — libre</div></div>
+          <div><div class="food-name">التتبيل</div><div class="food-qty">ملح، ليمون، بهارات، خردل، ثوم — كمية حرة</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 0g</span><span class="tag c">C 0g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">58g</div><div class="mmb-lbl">Protéines</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">6g</div><div class="mmb-lbl">Glucides</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">5g</div><div class="mmb-lbl">Lipides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">58غ</div><div class="mmb-lbl">بروتين</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">6غ</div><div class="mmb-lbl">كربوهيدرات</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">5غ</div><div class="mmb-lbl">دهون</div></div>
       </div>
     </div>
   </div>
 
-  <!-- REPAS 5 -->
+  <!-- وجبة 5 -->
   <div class="meal-card">
     <div class="meal-header" onclick="toggleMeal(this)">
-      <div class="meal-num">REPAS 5</div>
+      <div class="meal-num">الوجبة 5</div>
       <div class="meal-info">
-        <div class="meal-time">🌙 Soir — Dernier Repas</div>
-        <div class="meal-name">Œufs + Thon + Skyr + Pain Complet</div>
+        <div class="meal-time">🌙 المساء — الوجبة الأخيرة</div>
+        <div class="meal-name">بيض + تونة + سكير + خبز كامل</div>
       </div>
-      <div class="meal-kcal">580<small>kcal</small></div>
+      <div class="meal-kcal">580<small>سعرة</small></div>
     </div>
     <div class="meal-body">
       <div class="divider"></div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 24غ</span><span class="tag c">ك 2غ</span><span class="tag f">د 20غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥚</span>
-          <div><div class="food-name">4 Œufs Entiers Bouillis</div><div class="food-qty">durs ou mollets — à votre goût</div></div>
+          <div><div class="food-name">4 بيضات كاملة مسلوقة</div><div class="food-qty">صلبة أو متوسطة حسب التفضيل</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 24g</span><span class="tag c">C 2g</span><span class="tag f">F 20g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 11غ</span><span class="tag c">ك 0غ</span><span class="tag f">د 1غ</span></div>
         <div class="food-left">
           <span class="food-icon">🐟</span>
-          <div><div class="food-name">Thon au Naturel</div><div class="food-qty">50g égoutté — en boîte, au naturel</div></div>
+          <div><div class="food-name">تونة بالماء الطبيعي</div><div class="food-qty">50غ مصفاة — علبة محفوظة</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 0g</span><span class="tag f">F 1g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 11غ</span><span class="tag c">ك 4غ</span><span class="tag f">د 0غ</span></div>
         <div class="food-left">
           <span class="food-icon">🥛</span>
-          <div><div class="food-name">Skyr Nature 0%</div><div class="food-qty">100g — riche en caséine, idéal avant le coucher</div></div>
+          <div><div class="food-name">سكير طبيعي 0%</div><div class="food-qty">100غ — غني بالكازيين، مثالي قبل النوم</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 11g</span><span class="tag c">C 4g</span><span class="tag f">F 0g</span></div>
       </div>
       <div class="food-row">
+        <div class="food-macros"><span class="tag p">ب 7غ</span><span class="tag c">ك 30غ</span><span class="tag f">د 2غ</span></div>
         <div class="food-left">
           <span class="food-icon">🍞</span>
-          <div><div class="food-name">Pain Complet</div><div class="food-qty">2 toasts (60–70g) — pain complet ou aux céréales</div></div>
+          <div><div class="food-name">خبز كامل الحبوب</div><div class="food-qty">2 شريحة (60-70غ) — خبز أسمر أو بالبذور</div></div>
         </div>
-        <div class="food-macros"><span class="tag p">P 7g</span><span class="tag c">C 30g</span><span class="tag f">F 2g</span></div>
       </div>
       <div class="meal-macro-bar">
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">56g</div><div class="mmb-lbl">Protéines</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">37g</div><div class="mmb-lbl">Glucides</div></div>
-        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23g</div><div class="mmb-lbl">Lipides</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--lime)">56غ</div><div class="mmb-lbl">بروتين</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--yellow)">37غ</div><div class="mmb-lbl">كربوهيدرات</div></div>
+        <div class="mmb-item"><div class="mmb-val" style="color:var(--cyan)">23غ</div><div class="mmb-lbl">دهون</div></div>
       </div>
     </div>
   </div>
 
-  <!-- TOTAUX JOURNALIERS -->
+  <!-- الإجماليات اليومية -->
   <div class="total-bar">
-    <div class="total-title">✅ Totaux Journaliers</div>
-    <div class="total-row"><span class="lbl">Calories Totales</span><span class="big" style="color:var(--orange)">2 080 kcal</span></div>
-    <div class="total-row"><span class="lbl">Protéines</span><span class="big" style="color:var(--lime)">230g</span></div>
-    <div class="total-row"><span class="lbl">Glucides</span><span class="big" style="color:var(--yellow)">140g</span></div>
-    <div class="total-row"><span class="lbl">Lipides</span><span class="big" style="color:var(--cyan)">66g</span></div>
+    <div class="total-title">✅ الإجماليات اليومية</div>
+    <div class="total-row"><span class="lbl">مجموع السعرات</span><span class="big" style="color:var(--orange)">2,080 سعرة</span></div>
+    <div class="total-row"><span class="lbl">البروتين</span><span class="big" style="color:var(--lime)">230غ</span></div>
+    <div class="total-row"><span class="lbl">الكربوهيدرات</span><span class="big" style="color:var(--yellow)">140غ</span></div>
+    <div class="total-row"><span class="lbl">الدهون</span><span class="big" style="color:var(--cyan)">66غ</span></div>
 
     <div class="progress-wrap">
       <div style="margin-bottom:8px">
-        <div class="progress-label"><span style="color:var(--lime)">Protéines 44%</span><span>230g</span></div>
+        <div class="progress-label"><span>230غ</span><span style="color:var(--lime)">بروتين 44%</span></div>
         <div class="progress-track"><div class="progress-fill" style="width:44%;background:var(--lime)"></div></div>
       </div>
       <div style="margin-bottom:8px">
-        <div class="progress-label"><span style="color:var(--yellow)">Glucides 27%</span><span>140g</span></div>
+        <div class="progress-label"><span>140غ</span><span style="color:var(--yellow)">كربوهيدرات 27%</span></div>
         <div class="progress-track"><div class="progress-fill" style="width:27%;background:var(--yellow)"></div></div>
       </div>
       <div>
-        <div class="progress-label"><span style="color:var(--cyan)">Lipides 29%</span><span>66g</span></div>
+        <div class="progress-label"><span>66غ</span><span style="color:var(--cyan)">دهون 29%</span></div>
         <div class="progress-track"><div class="progress-fill" style="width:29%;background:var(--cyan)"></div></div>
       </div>
     </div>
@@ -633,52 +639,52 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 <!-- ══════════ TIPS TAB ══════════ -->
 <div class="section" id="sec-tips">
 
-  <p class="meals-header">Conseils du <em>Nutritionniste</em></p>
+  <p class="meals-header">نصائح <em>أخصائي التغذية</em></p>
 
   <div class="tip-card" style="border-color:var(--lime)">
-    <div class="tip-title" style="color:var(--lime)">💧 Hydratation</div>
-    Boire minimum <strong>3–3.5L d'eau par jour</strong>. En tant que mécanicien avec une activité physique soutenue, la déshydratation nuira à vos performances et ralentira la perte de graisse. Commencez chaque matin avec un grand verre d'eau avant le repas 1.
+    <div class="tip-title" style="color:var(--lime)">💧 الترطيب</div>
+    اشرب على الأقل <strong>3 إلى 3.5 لتر ماء يومياً</strong>. بصفتك ميكانيكياً بنشاط جسدي مرتفع، الجفاف سيضر بأداءك ويبطئ حرق الدهون. ابدأ كل صباح بكوب كبير من الماء قبل الوجبة الأولى.
   </div>
 
   <div class="tip-card" style="border-color:var(--orange)">
-    <div class="tip-title" style="color:var(--orange)">🍳 Meal Prep (Dimanche)</div>
-    Cuisinez le poulet, le riz et les légumes en grandes quantités chaque dimanche. Pré-portionnez dans des boîtes. Cela rend le respect des macros non négociable les jours de travail chargés.
+    <div class="tip-title" style="color:var(--orange)">🍳 تحضير الطعام (الأحد)</div>
+    اطبخ الدجاج والأرز والخضروات بكميات كبيرة كل يوم أحد. قسّمها مسبقاً في علب محكمة. هذا يجعل الالتزام بالمغذيات أمراً لا مجال للتهاون فيه خلال أيام العمل المزدحمة.
   </div>
 
   <div class="tip-card" style="border-color:var(--yellow)">
-    <div class="tip-title" style="color:var(--yellow)">⚙️ Timing des Glucides</div>
-    Concentrez la majorité des glucides <strong>autour de l'entraînement</strong> (Repas 2 midi + Pré-séance). Les jours de repos, réduisez les glucides du pré-séance de 50% — remplacez la banane par des légumes ou une portion plus petite.
+    <div class="tip-title" style="color:var(--yellow)">⚙️ توقيت الكربوهيدرات</div>
+    ركّز معظم الكربوهيدرات <strong>حول وقت التمرين</strong> (وجبة الظهر + قبل التمرين). في أيام الراحة، قلّل كربوهيدرات ما قبل التمرين بنسبة 50% — استبدل الموز بخضروات أو حصة أصغر.
   </div>
 
   <div class="tip-card" style="border-color:var(--cyan)">
-    <div class="tip-title" style="color:var(--cyan)">🥩 Rotation Bœuf / Poulet</div>
-    Le bœuf est limité à 200g/jour (teneur en graisses). Les jours sans bœuf, remplacez par : <strong>200g de blanc de poulet</strong> au dîner, ou <strong>150g de sardines en boîte</strong> pour augmenter les oméga-3. Faites tourner les sardines 2–3x par semaine.
+    <div class="tip-title" style="color:var(--cyan)">🥩 التناوب بين اللحم والدجاج</div>
+    اللحم البقري محدود بـ 200غ/يوم. في الأيام التي لا تأكل فيها لحماً، استبدله بـ: <strong>200غ صدر دجاج</strong> إضافي، أو <strong>150غ سردين معلب</strong> لزيادة الأوميغا-3. ادرج السردين 2-3 مرات أسبوعياً.
   </div>
 
   <div class="tip-card" style="border-color:var(--pink)">
-    <div class="tip-title" style="color:var(--pink)">🚫 À Éviter</div>
-    <strong>Merguez, fritures (style méchoui), pâtisseries algériennes (baklawa, zlabia), sodas, harissa en excès, trop de pain blanc</strong>. Ces aliments casseront le déficit silencieusement sans donner l'impression de tricher.
+    <div class="tip-title" style="color:var(--pink)">🚫 ما يجب تجنبه</div>
+    <strong>المرقاز، المقليات، الحلويات الجزائرية (البقلاوة، الزلابية)، المشروبات الغازية، الهريسة بإفراط، الخبز الأبيض بكثرة</strong>. هذه الأطعمة ستكسر العجز بصمت دون أن تشعر بالغش.
   </div>
 
   <div class="tip-card" style="border-color:var(--muted)">
-    <div class="tip-title" style="color:var(--sub)">🌿 Légumes Libres</div>
-    Les légumes suivants peuvent être consommés librement (pas de comptage nécessaire) : <strong>laitue, concombre, tomate, courgette, poivron vert, épinards, herbes fraîches (coriandre, persil), jus de citron</strong>. Ils apportent volume, fibres et micronutriments avec quasi zéro calories.
+    <div class="tip-title" style="color:var(--sub)">🌿 الخضروات الحرة</div>
+    يمكن تناول الخضروات التالية بحرية تامة (لا حاجة للعدّ): <strong>خس، خيار، طماطم، كوسة، فلفل أخضر، سبانخ، أعشاب طازجة (كزبرة، بقدونس)، عصير ليمون</strong>. تعطي حجماً وألياف ومعادن بسعرات تكاد تكون صفراً.
   </div>
 
   <div style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px;">
-    <div class="calc-title">📅 Structure Hebdomadaire</div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Lundi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Mardi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Mercredi</div><div class="day-tag rest">Repos</div><div class="day-note">−50g glucides</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Jeudi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Vendredi</div><div class="day-tag train">Entraînement</div><div class="day-note">Macros complètes</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Samedi</div><div class="day-tag rest">Repos</div><div class="day-note">−50g glucides</div></div>
-    <div class="day-row"><div class="day-label" style="color:var(--text)">Dimanche</div><div class="day-tag rest">Meal Prep</div><div class="day-note">−50g glucides</div></div>
+    <div class="calc-title">📅 البرنامج الأسبوعي</div>
+    <div class="day-row"><div class="day-label">الاثنين</div><div class="day-tag train">تمرين</div><div class="day-note">مغذيات كاملة</div></div>
+    <div class="day-row"><div class="day-label">الثلاثاء</div><div class="day-tag train">تمرين</div><div class="day-note">مغذيات كاملة</div></div>
+    <div class="day-row"><div class="day-label">الأربعاء</div><div class="day-tag rest">راحة</div><div class="day-note">−50غ كربوهيدرات</div></div>
+    <div class="day-row"><div class="day-label">الخميس</div><div class="day-tag train">تمرين</div><div class="day-note">مغذيات كاملة</div></div>
+    <div class="day-row"><div class="day-label">الجمعة</div><div class="day-tag train">تمرين</div><div class="day-note">مغذيات كاملة</div></div>
+    <div class="day-row"><div class="day-label">السبت</div><div class="day-tag rest">راحة</div><div class="day-note">−50غ كربوهيدرات</div></div>
+    <div class="day-row"><div class="day-label">الأحد</div><div class="day-tag rest">تحضير</div><div class="day-note">−50غ كربوهيدرات</div></div>
   </div>
 
   <div class="tip-card" style="border-color:var(--orange)">
-    <div class="tip-title" style="color:var(--orange)">📏 Calendrier de Réévaluation</div>
-    Prenez de nouvelles mensurations corporelles <strong>toutes les 2 semaines</strong> (même heure, le matin à jeun). Si la perte de poids stagne pendant 2+ semaines, réduisez les glucides de 20g et réévaluez. Notez tout dans le suivi corporel.
+    <div class="tip-title" style="color:var(--orange)">📏 جدول إعادة التقييم</div>
+    خذ قياسات جسدية جديدة <strong>كل أسبوعين</strong> (في نفس الوقت، صباحاً على الريق). إذا توقف فقدان الوزن لأكثر من أسبوعين، قلّص الكربوهيدرات بمقدار 20غ وأعد التقييم. سجّل كل شيء في متابعة الجسم.
   </div>
 
 </div><!-- /tips -->
@@ -686,10 +692,10 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 </main>
 
 <script>
-function switchTab(name) {
+function switchTab(name, el) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  event.target.classList.add('active');
+  el.classList.add('active');
   document.getElementById('sec-'+name).classList.add('active');
 }
 
@@ -698,7 +704,7 @@ function toggleMeal(header) {
   body.classList.toggle('open');
 }
 
-// Ouvrir le repas 2 (principal) par défaut
+// فتح الوجبة 2 (الرئيسية) بشكل افتراضي
 document.querySelectorAll('.meal-header')[1].click();
 </script>
 </body>
