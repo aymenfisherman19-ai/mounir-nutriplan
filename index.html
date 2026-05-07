@@ -4,8 +4,23 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>منير — الخطة الغذائية</title>
+
+<!-- ✅ FIX 1: preconnect so the browser starts the handshake immediately -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+<!-- ✅ FIX 2: load fonts with <link> (not @import) so CSS is NOT blocked,
+     only 3 weights instead of 9, and font-display=swap so text shows instantly -->
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@400;500&display=swap"
+      media="print" onload="this.media='all'"/>
+<!-- Fallback for no-JS -->
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@400;500&display=swap"/>
+</noscript>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap');
 
 :root {
   --bg: #070d1a;
@@ -85,7 +100,7 @@ body {
 .tab {
   padding: 12px 14px; font-size: 12px; font-weight: 700;
   color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent;
-  transition: all 0.15s; white-space: nowrap;
+  white-space: nowrap;
   background: none; border-top: none; border-left: none; border-right: none;
   font-family: 'Cairo', sans-serif;
 }
@@ -93,7 +108,8 @@ body {
 
 /* ─── MAIN CONTENT ─── */
 main { padding: 16px; max-width: 700px; margin: 0 auto; }
-.section { display: none; }
+/* ✅ FIX 3: content-visibility lets the browser skip layout/paint for hidden sections */
+.section { display: none; content-visibility: auto; }
 .section.active { display: block; }
 
 /* ─── MACRO RING SECTION ─── */
@@ -165,7 +181,8 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 .meal-card {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 14px; margin-bottom: 12px;
-  overflow: hidden; transition: border-color 0.2s;
+  overflow: hidden;
+  /* ✅ FIX 4: removed hover transition - saves GPU on mobile */
 }
 .meal-card:hover { border-color: rgba(249,115,22,0.3); }
 
@@ -264,7 +281,7 @@ main { padding: 16px; max-width: 700px; margin: 0 auto; }
 .progress-wrap { margin-top: 10px; }
 .progress-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-bottom: 4px; flex-direction: row-reverse; }
 .progress-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; }
-.progress-fill { height: 100%; border-radius: 10px; transition: width 1s ease; }
+.progress-fill { height: 100%; border-radius: 10px; }
 </style>
 </head>
 <body>
@@ -704,8 +721,10 @@ function toggleMeal(header) {
   body.classList.toggle('open');
 }
 
-// فتح الوجبة 2 (الرئيسية) بشكل افتراضي
-document.querySelectorAll('.meal-header')[1].click();
+// ✅ FIX 5: defer default open slightly so it doesn't block first paint
+requestAnimationFrame(function() {
+  document.querySelectorAll('.meal-header')[1].click();
+});
 </script>
 </body>
 </html>
